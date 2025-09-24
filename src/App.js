@@ -11,7 +11,7 @@ import "./styles.css";
 export default function App() {
   return (
     <Router>
-      <Header />  {/* Header fixo em todas as páginas */}
+      <Header />  {}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/produtos" element={<Produtos />} />
@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />  {/* Footer fixo em todas as páginas */}
+      <Footer />  {}
     </Router>
   );
 }
