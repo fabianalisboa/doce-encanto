@@ -1,5 +1,4 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import CardProduto from "../components/CardProduto";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -22,8 +21,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <Header />
+    
+    <div> 
       {usuario && <h2 className="bem-vindo">Bem-vinda, {usuario}!</h2>}
       <h2 className="titulo">Produtos em Destaque</h2>
       <div className="produtos-container">
@@ -34,7 +33,6 @@ export default function Home() {
       <button className="botao" onClick={() => navigate("/produtos")}>
         Ver Todos os Produtos
       </button>
-      <Footer />
     </div>
   );
 }
