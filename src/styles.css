@@ -152,3 +152,78 @@ body {
   font-size: 12px;
   margin-left: 5px;
 }
+
+.boas-vindas {
+  background: white;
+  color: #ff69b4;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-sair {
+  background: white;
+  color: #ff69b4;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-sair:hover {
+  background: #ffe0ef;
+}
+
+.login-container {
+  background: white;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-container button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login-container button:hover {
+  background: #ff85c1;
+}
+
+.mensagem {
+  color: #ff69b4;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.alternar {
+  color: #ff69b4;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+}

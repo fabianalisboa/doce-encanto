@@ -5,8 +5,9 @@ export default function Sobre() {
       {}
       <h2 className="titulo">Sobre Nós</h2>
       <p className="texto">
-        A Doce Encanto nasceu para adoçar sua vida com os melhores bolos e doces
-        da cidade. Tudo feito com carinho e ingredientes selecionados.
+        Na Doce Encanto, cada doce conta uma história.
+        
+Feitos com amor, ingredientes selecionados e um toque artesanal, nossos bolos e sobremesas foram criados pra tornar o seu dia mais doce e especial. 🍰
       </p>
       {}
     </div>
