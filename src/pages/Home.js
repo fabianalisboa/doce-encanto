@@ -1,6 +1,7 @@
 import CardProduto from "../components/CardProduto";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Weather from "../components/Weather"; // ✅ IMPORTAÇÃO DO CLIMA
 
 const produtosDestaque = [
   { id: 1, nome: "Bolo de Cenoura", preco: 35, imagem: "/produtos/bolo1.jpg" },
@@ -50,6 +51,11 @@ export default function Home() {
       <button className="botao" onClick={() => navigate("/produtos")}>
         Ver Todos os Produtos
       </button>
+
+      {/* ✅ CLIMA COMO RODAPÉ */}
+      <div style={{ marginTop: "40px", display: "flex", justifyContent: "center" }}>
+        <Weather city="Pelotas" />
+      </div>
     </div>
   );
 }
