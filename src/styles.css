@@ -227,3 +227,288 @@ body {
   font-size: 14px;
   margin-top: 15px;
 }
+
+.carrinho-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffe4f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carrinho-titulo {
+  font-size: 2rem;
+  text-align: center;
+  color: #ff1493;
+  margin-bottom: 20px;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.carrinho-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.carrinho-item:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+.carrinho-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ff69b4;
+}
+
+.carrinho-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.carrinho-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.btn-remover {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.btn-remover:hover {
+  background: #d90429;
+}
+
+.total {
+  font-size: 1.6rem;
+  text-align: right;
+  margin-top: 20px;
+  color: #ff1493;
+}
+
+.total span {
+  color: #d90429;
+}
+
+.btn-finalizar {
+  display: block;
+  width: 100%;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-finalizar:hover {
+  background: #1ebe5d;
+}
+
+/* Responsividade Carrinho */
+@media (max-width: 600px) {
+  .carrinho-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrinho-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn-remover,
+  .btn-finalizar {
+    width: 100%;
+  }
+}
+
+
+.sobre-container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.sobre-container h2 {
+  color: #ff1493;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sobre-container p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.sobre-imagem {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 3px solid #ff69b4;
+}
+
+.legenda-imagem {
+  font-style: italic;
+  color: #ff1493;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.sobre-diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.sobre-diferenciais div {
+  background: white;
+  border-radius: 12px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #d63384;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sobre-diferenciais div:hover {
+  transform: scale(1.05);
+  background: #ffe4f0;
+}
+
+.sobre-container p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+.sobre-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.sobre-diferenciais div {
+  width: 100%;
+  text-align: center;
+}
+
+
+.contato-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffe4f0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #ff1493;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.descricao-contato {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background: white;
+  transition: border 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border: 1px solid #ff69b4;
+  outline: none;
+}
+
+.botao {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.botao:hover {
+  background: #ff1493;
+  transform: scale(1.05);
+}
+
+/* Botão WhatsApp opcional */
+.btn-whats {
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 15px;
+  width: 220px;
+}
+
+.btn-whats:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+
+

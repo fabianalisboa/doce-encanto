@@ -10,7 +10,7 @@ export default function CardProduto({ produto }) {
       <img src={produto.imagem} alt={produto.nome} />
       <h3>{produto.nome}</h3>
       <p>R$ {produto.preco.toFixed(2)}</p>
-      <button onClick={() => addToCart(produto)}>Adicionar ao Carrinho</button>
+      <button onClick={() => addToCart(produto)}>🛒 Comprar agora</button>
     </div>
   );
 }
